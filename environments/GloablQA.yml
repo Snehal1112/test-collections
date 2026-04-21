@@ -1,0 +1,8 @@
+name: GloablQA
+variables:
+- name: baseURL
+  value: https://google.com
+- name: asdasdasdasdsddd
+  value: sdddd
+- name: oidc-baseurl
+  value: https://exchange4all.local
