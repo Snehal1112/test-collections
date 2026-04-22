@@ -25,6 +25,13 @@ request:
       - name: audience
         value: snet-dev/network/api
         placement: query
+      accessTokenRequest:
+      - name: audience
+        value: SBCDS/global
+        placement: query
+      - name: nonce
+        value: iamarandomnonce
+        placement: query
     settings:
       autoFetchToken: true
       autoRefreshToken: false
