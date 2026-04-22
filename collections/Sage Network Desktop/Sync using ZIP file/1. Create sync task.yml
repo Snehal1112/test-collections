@@ -1,0 +1,30 @@
+uid: f72c14c2-690d-4631-8794-988d307d2af0
+info:
+  name: 1. Create sync task
+  type: http
+  seq: 1
+http:
+  method: POST
+  url: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks'
+  headers:
+  - name: Content-Type
+    value: application/vnd.api+json
+  - name: Accept
+    value: application/vnd.api+json
+  - name: Idempotency-Key
+    value: '{{$guid}}'
+  body:
+    type: json
+    data: |-
+      {
+          "data": {
+              "type": "SyncTask",
+              "attributes": {
+                  "packageType": "Full"
+              }
+          }
+      }
+runtime:
+  scripts:
+  - type: after-response
+    code: "test(\"Created\", function(){\n    expect(res.getStatus()).to.equal(201);\n})\n\nvar jsonData = res.getBody();\nbru.setEnvVar(\"connectorSyncTaskId\", jsonData.data.id);\nbru.setEnvVar(\"connectorBlobUploadUrl\", \n        jsonData.included[0].attributes.uploadUrl);\nbru.setEnvVar(\"connectorAttachmentId\", \n        jsonData.data.relationships.attachment.data.id);"

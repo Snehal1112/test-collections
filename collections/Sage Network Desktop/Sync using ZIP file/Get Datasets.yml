@@ -1,0 +1,11 @@
+uid: 964737a4-91bb-46fe-85a3-b95a32389241
+info:
+  name: Get Datasets
+  type: http
+http:
+  method: GET
+  url: https://api-qa.network-eng.sage.com/datasets
+settings:
+  timeout: 30000.0
+  followRedirects: true
+  verifySsl: true

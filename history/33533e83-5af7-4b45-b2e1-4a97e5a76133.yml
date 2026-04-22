@@ -1,0 +1,9 @@
+id: 33533e83-5af7-4b45-b2e1-4a97e5a76133
+method: GET
+url: https://google.com
+status: 200
+durationMs: 427
+responseSize: 83527
+timestamp: 2026-04-08T19:31:03.011203538Z
+collection: null
+requestName: null

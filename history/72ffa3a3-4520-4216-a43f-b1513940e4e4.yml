@@ -1,0 +1,9 @@
+id: 72ffa3a3-4520-4216-a43f-b1513940e4e4
+method: GET
+url: https://google.com//api/v1/webapp/:id=12//{{$foo}}
+status: 400
+durationMs: 252
+responseSize: 1555
+timestamp: 2026-04-21T08:57:23.572633838Z
+collection: null
+requestName: null

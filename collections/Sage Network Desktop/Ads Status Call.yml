@@ -1,0 +1,8 @@
+uid: 3ade7491-1392-45dc-8c93-6d1ade87233e
+info:
+  name: Ads Status Call
+  type: http
+  seq: 8
+http:
+  method: GET
+  url: https://api-int.network-eng.sage.com/api/v1/status

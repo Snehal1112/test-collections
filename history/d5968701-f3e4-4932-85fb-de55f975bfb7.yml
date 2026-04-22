@@ -1,0 +1,9 @@
+id: d5968701-f3e4-4932-85fb-de55f975bfb7
+method: GET
+url: https://google.com//api/v1/webapp
+status: 400
+durationMs: 293
+responseSize: 1555
+timestamp: 2026-04-17T19:54:06.144913101Z
+collection: null
+requestName: null

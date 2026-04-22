@@ -1,0 +1,9 @@
+id: e8536ef2-f54b-4a29-89ef-ee19ea7ef0df
+method: GET
+url: https://dev.network-eng.sage.com//inbox/api/v3
+status: 502
+durationMs: 687
+responseSize: 183
+timestamp: 2026-04-09T05:41:31.327158493Z
+collection: null
+requestName: null

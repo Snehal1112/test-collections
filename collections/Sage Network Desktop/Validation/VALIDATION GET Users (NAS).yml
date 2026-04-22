@@ -1,0 +1,18 @@
+uid: 76eaf429-c953-40d0-8939-6efa47b13cba
+info:
+  name: VALIDATION GET Users (NAS)
+  type: http
+  seq: 8
+http:
+  method: GET
+  url: '{{nasUrl}}/users/{{provisionAccountResponseUserId}}'
+  headers:
+  - name: Authorization
+    value: Bearer {{m2mjwt}}
+  - name: X-Idempotency-Key
+    value: '{{uuid}}'
+    disabled: true
+runtime:
+  scripts:
+  - type: before-request
+    code: // Generate a random number to use as a variable

@@ -1,0 +1,8 @@
+uid: 57c04862-6c52-4438-b8df-18a81a22ad76
+info:
+  name: Get Dataset by Id
+  type: http
+  seq: 6
+http:
+  method: GET
+  url: https://api-int.network-eng.sage.com/datasets/:datasetId

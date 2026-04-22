@@ -1,0 +1,31 @@
+opencollection: 1.0.0
+uid: 4eec546f-e099-4cbf-b139-f6b97488f676
+info:
+  name: Sage Network Desktop
+request:
+  auth:
+    type: oauth2
+    flow: authorization_code
+    accessTokenUrl: https://id-shadow.sage.com/oauth/token
+    authorizationUrl: https://id-shadow.sage.com/authorize
+    callbackUrl: https://jwt.io/
+    credentials:
+      clientId: 2VTkNzE3St3yShVbZ2cnlkhQVBUHxves
+      clientSecret: GEMglaz4WN9eWn5-ZPrwFv2_9EVRmrdZaDGSXBk7hIMBqVOjgpgKyG0jcI-okVPX
+      placement: basic_auth_header
+    scope: openid email profile offline_access user:full
+    pkce:
+      enabled: true
+      method: S256
+    additionalParameters:
+      authorizationRequest:
+      - name: nonce
+        value: iamarandomnonce
+        placement: query
+      - name: audience
+        value: snet-dev/network/api
+        placement: query
+    settings:
+      autoFetchToken: true
+      autoRefreshToken: false
+      verifySsl: true

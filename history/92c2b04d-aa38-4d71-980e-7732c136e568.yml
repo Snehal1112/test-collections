@@ -1,0 +1,9 @@
+id: 92c2b04d-aa38-4d71-980e-7732c136e568
+method: GET
+url: https://jsonplaceholder.typicode.com/posts
+status: 200
+durationMs: 644
+responseSize: 27520
+timestamp: 2026-04-20T06:04:19.992622324Z
+collection: null
+requestName: null

@@ -1,0 +1,76 @@
+uid: 8ac18423-1491-4d41-9028-a508c6eead62
+info:
+  name: 4. Poll Provision Account
+  type: http
+  seq: 3
+http:
+  method: POST
+  url: '{{connectedBridgeURL}}/provision/account'
+  headers:
+  - name: Content-Type
+    value: application/json
+  - name: X-Idempotency-Key
+    value: '{{provisionAccountIdempotency}}'
+  body:
+    type: json
+    data: |-
+      {
+        "User": {
+          "Email": "{{provisionAccountEmail}}",
+          "FirstName": "{{$randomFirstName}}",
+          "LastName": "{{$randomLastName}}",
+          "Locale": "en-GB"
+        },
+        "Account": {},
+        "ProductSubscription": {
+          "ManagingAccountId": "{{provisionAccountManagingAccountId}}",
+          "SubscriptionId": "{{provisionAccountSubscriptionId}}",
+          "Origin": "{{origin}}",
+          "BackOfficeId": "{{provisionAccountBackOfficeId}}",
+          "BackOfficeSource": "{{STSProvider}}"
+        },
+        "ProductLicences": [
+          {
+            "Product": "{{productCode}}",
+            "ProductLicenseType": "{{productLicenseType}}",
+            "Expires": "2027-03-12 10:38:14Z"
+          },
+          {
+            "Product": "network",
+            "ProductLicenseType": "network-standard",
+            "Expires": "2027-09-30T10:48:24+00:00"
+          },
+          //       Uncomment-this for testing hybrid scenario
+                  {
+                      "Product": "sageconnect",
+                      "ProductLicenseType": "sageconnect_ar_auto_base",
+                      "Expires": "2027-09-30T10:48:24+00:00"
+                  }
+        ],
+        "Licence": {
+          "Application": "{{STSApplication}}",
+          "Version": "{{STSVersion}}",
+          "Provider": "{{STSProvider}}",
+          "LicenceData": "{{STSLicenseData}}"
+        },
+        "Business": {
+          "Name": "{{provisionAccountName}}",
+          "ExternalId": "{{provisionAccountExternalId}}",
+          "ExternalSource": "Sage Desktop",
+          "RegisteredLocation": "{{registeredCountry}}",
+          "RegisteredCountry": "{{registeredCountry}}",
+          "BusinessAddress": {
+            "Type": "main",
+            "Line1": "Sage",
+            "Country": "{{registeredCountry}}"
+          },
+          "ProductInstance": {
+            "Name": "{{productCode}}",
+            "ProductCode": "{{productCode}}"
+          }
+        }
+      }
+runtime:
+  scripts:
+  - type: after-response
+    code: "if (res.getStatus() === 202) {\n    console.log(\"Continue to poll until 201 is returned\");\n} else if (res.getStatus() === 201) {\n    var jsonData = res.getBody();\n    bru.setEnvVar(\"provisionAccountResponseAccountId\", jsonData.AccountId);\n    bru.setEnvVar(\"provisionAccountResponseUserId\", jsonData.UserId);\n    bru.setEnvVar(\"provisionAccountResponseBusinessId\", jsonData.BusinessId);\n \n    const networkProductInstances = jsonData.ProductInstances.find(p => p.ProductCode === 'network')\n    const networkProductInstancesId = networkProductInstances ? networkProductInstances.Id : 'not found'\n    bru.setEnvVar(\"networkProductInstancesId\", networkProductInstancesId);\n    const networkProductInstancesTenantId = networkProductInstances ? networkProductInstances.TenantId : 'not found'\n    bru.setEnvVar(\"networkProductInstancesTenantId\", networkProductInstancesTenantId);\n    const networkProductInstancesProductCode = networkProductInstances ? networkProductInstances.ProductCode : 'not found'\n    bru.setEnvVar(\"networkProductInstancesProductCode\", networkProductInstancesProductCode);\n \n    // Create encoded context for request 5. Shadow authorize. \n    let businessId = bru.getEnvVar(\"provisionAccountResponseBusinessId\");\n    let email = bru.getEnvVar(\"provisionAccountEmail\");\n \n    let stringToEncode = '{\"TenantId\":\"' + networkProductInstancesTenantId + '\",\"RoleIds\":[\"erp\"],\"OwnerEmailHint\":\"' + email + '\"}';\n    bru.setEnvVar(\"contextHintEncoded\", stringToBase32(stringToEncode));\n}\n \nfunction stringToBase32(str) {\n    var base32chars = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ234567\";\n    var binString = '';\n    var pad = 0;\n \n    for (var i = 0; i < str.length; i++) {\n        var charCode = str.charCodeAt(i);\n        var bits = charCode.toString(2);\n        binString += leftpad(bits, 8, '0');\n    }\n \n    var base32String = '';\n    for (var j = 0; j < binString.length; j += 5) {\n        var chunk = binString.substr(j, 5);\n        if (chunk.length < 5) {\n            pad = 5 - chunk.length;\n            chunk += '0'.repeat(pad);\n        }\n        var index = parseInt(chunk, 2);\n        base32String += base32chars[index];\n    }\n \n    // Add padding if necessary\n    if (pad > 0) {\n        base32String += '='.repeat(pad);\n    }\n \n    return base32String;\n}\n \nfunction leftpad(str, len, pad) {\n    return len + 1 >= str.length && (str = new Array(len + 1 - str.length).join(pad) + str), str;\n}"

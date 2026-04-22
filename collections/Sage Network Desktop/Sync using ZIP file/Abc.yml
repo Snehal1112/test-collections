@@ -1,0 +1,59 @@
+uid: b3379efe-4c9c-4520-8045-716bad7f5454
+info:
+  name: Abc
+  type: http
+  seq: 7
+http:
+  method: GET
+  url: https://qa.network-eng.sage.com/inbox/api/v3/network_users?page=1&page_items=25&direct_users_only=false
+  headers:
+  - name: accept
+    value: text/plain
+  - name: accept-language
+    value: en-US,en;q=0.9
+  - name: app-code
+    value: sage_network
+  - name: applicationname
+    value: Sage Connect UI
+  - name: authorization
+    value: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8YjEwNjRlYzFhNDg3YzcyOWI3YTk5OTc1MjZmZjdlM2ZlY2I4OGRmNmYxM2VkYmU2IiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzcwMjEzNDE3LCJleHAiOjE3NzAyNDIyMTcsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJmN1Jua084VmFIWmFwcWJqRjVOaWRjSTg4MGM5SXZ1QyJ9.ToHEhXDEY9T0yybhSjDuQOMtKUitb1t9IOuSWeEWVzqwi_aMhaqgMm_NdWej_FKTHg9YW1mz8zL_ZwvM2399WTVnfDjWilqTOSTPedJg4c4aBZXTlo0ycJJ4rknfVP7Zs03fF__3UpV1_UUZUxyGZ_aGY4zH1TruCrF845_y1Wb85xh2nO-IgEvnpCAdS5rLn4Cg33wS0GvonXEFTgJF220hcYjEXS0aPtI5Tdw8J1jUh9-hnP-vBcQzd8NcDNwui8L9RPVuXZ7EcE1rW74kFRyH-_FJHDBbb51I7viOPW3NRPRS3F9LlC4XQjDjfb_J_U6Sgnzw5zehYK6rlFhYmw
+  - name: cache-control
+    value: no-cache
+  - name: Cookie
+    value: _cfuvid=.sKd9oYKym7xklH0Y_EDzuqh4FJFOkDh9ddsZy_T340-1770212922398-0.0.1.1-604800000; utag_main=v_id:019c28eab1ed00131f61facea02b0507d001b075009d8$_sn:1$_se:2%3Bexp-session$_ss:0%3Bexp-session$_st:1770214795953%3Bexp-session$ses_id:1770212995572%3Bexp-session$_pn:1%3Bexp-session; _legacy_auth0.f7RnkO8VaHZapqbjF5NidcI880c9IvuC.is.authenticated=true; auth0.f7RnkO8VaHZapqbjF5NidcI880c9IvuC.is.authenticated=true; __cf_bm=BWzUf9iQLDKSo8tiL6QV3hTWEVHJIMbxLb.saXu71HA-1770213432-1.0.1.1-AXkTuSGGWGCMr19R2yieIsiuzMUxaK4f.8hIk3Li4mgaBZ.FxOGbZ_a8TKzM_L.dj1h63Fpt6nlnOqFo63WPEev4jsTyOjQF0EVCx0vgmrSgzliKt4YPcybcNbStFWad
+  - name: expires
+    value: '-1'
+  - name: group-key
+    value: 0b577e25-f1a2-0aeb-5741-2b4e4fbb7e30
+  - name: newrelic
+    value: eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjYyMjAyNDMiLCJhcCI6IjU5NDU3Mzg3NCIsImlkIjoiYWFhOGRjNWU3ZjY3YmRkMSIsInRyIjoiZjU3YWY3YzEzZmM5Y2ZlYjA3YjBhYTljMmI4YzVmZjkiLCJ0aSI6MTc3MDIxMzYwNjAwMywidGsiOiIzMDQ1NTcwIn19
+  - name: pragma
+    value: no-cache
+  - name: priority
+    value: u=1, i
+  - name: referer
+    value: https://qa.network-eng.sage.com/settings/user-settings
+  - name: sec-ch-ua
+    value: '"Not(A:Brand";v="8", "Chromium";v="144", "Microsoft Edge";v="144"'
+  - name: sec-ch-ua-mobile
+    value: ?0
+  - name: sec-ch-ua-platform
+    value: '"Windows"'
+  - name: sec-fetch-dest
+    value: empty
+  - name: sec-fetch-mode
+    value: cors
+  - name: sec-fetch-site
+    value: same-origin
+  - name: traceparent
+    value: 00-f57af7c13fc9cfeb07b0aa9c2b8c5ff9-aaa8dc5e7f67bdd1-01
+  - name: tracestate
+    value: 3045570@nr=0-1-6220243-594573874-aaa8dc5e7f67bdd1----1770213606003
+  - name: user-agent
+    value: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0
+  - name: x-group-key
+    value: 0b577e25-f1a2-0aeb-5741-2b4e4fbb7e30
+  - name: x-requested-with
+    value: XMLHttpRequest
+  - name: x-sxp-authorization
+    value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8YjEwNjRlYzFhNDg3YzcyOWI3YTk5OTc1MjZmZjdlM2ZlY2I4OGRmNmYxM2VkYmU2IiwiYXVkIjpbIlNCQ0RTL2dsb2JhbCIsImh0dHBzOi8vc2FnZS1jaWQtc2hhZG93LnNhZ2VpZG5vbnByb2QuYXV0aDBhcHAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTc3MDIxMzQyNywiZXhwIjoxNzcwMjQyMjI3LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIHVzZXI6ZnVsbCIsImF6cCI6ImY3Um5rTzhWYUhaYXBxYmpGNU5pZGNJODgwYzlJdnVDIn0.ty4Q_LxXzvmzzdHvHXWUI2TQICGAg98L5u0XMerLMD_uqY_g3xnX7Y2KTr09E9QGB9SBV1xqbU9YB_Ak9jMFqYpRgRTZkCoNNjXPEAqZbWXTkqLKSLgxFCiMAzYvHsb_rD4q8SFfmtUAWBv3paQI7k__6ByK0fbFoBm-aPNEAhlFQ742EgdcQ3qe6B4TNiH1zECp1PHyXwzLDLWQ9V4ca5IbFbQmXMFBVER9Iq-IDPSnlRqrxNekS30jHk_weWfpLCa_aP8DfB8usLfdQ7N7C5Ed_An3Sq5PhBP6BPCvhpuLIfhYY_kX-LvAYxdW_xTpDmZ72BaEINzhmm-NnfueNA

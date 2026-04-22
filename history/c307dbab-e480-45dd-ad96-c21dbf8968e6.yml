@@ -1,0 +1,9 @@
+id: c307dbab-e480-45dd-ad96-c21dbf8968e6
+method: GET
+url: https://exchange4all.local/api/v1/webapp/hierarchy
+status: 400
+durationMs: 4
+responseSize: 212
+timestamp: 2026-04-09T20:08:21.011395265Z
+collection: null
+requestName: null

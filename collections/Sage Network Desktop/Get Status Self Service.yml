@@ -1,0 +1,57 @@
+uid: feee6a41-2d81-4366-9f48-0a09214603bf
+info:
+  name: Get Status Self Service
+  type: http
+  seq: 11
+http:
+  method: GET
+  url: https://int.network-eng.sage.com/portal/api/api/v3/status?user_type=customer&dataset_id=25a77b24-0092-6be0-92e6-34d0aae4e471&clear_cache=false
+  headers:
+  - name: accept
+    value: text/plain
+  - name: accept-language
+    value: en-US,en;q=0.9
+  - name: applicationname
+    value: Sage Connect UI
+  - name: authorization
+    value: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8MjMxNGUxNDE4NTQ3NTE5OGI2OWMxYzJjMjdmOGRmNGY3MTk0YzMwYjZkODE2MWNkIiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzcyMTg0MTk1LCJleHAiOjE3NzIyMTI5OTUsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJTUUR5aWlDSXJPemQyZ2c2SkRueXVVN2FrSjhBU002TCJ9.m7HBQCL7kzcGI5-rT3HeqP_CeAjOkDjxktsO3Sp-poW7kxV7MpXU2R7M-9ZXwTNDYpZqUjyLdZsX5rgwwvXY5GyiPqAJrm3nS9AJvpb888heiTdJA4ms0LJGVPG_1cFWERhKCHJaOxxWsQ9zfwN5xnjrCQAa-15mC3T2R90NmGd84JuOBWpQzQTrtJNlKrAbrlf_QkYD0keeOaelFhZqydKKMqQR1osXmhb0Z3SneIkdjnyKcgdscJL1nvvOnjJ6YMgQ1-SiY6hH0q3JtQR94aqitRNfyTRY03fR6g_v7zTYcu6SGVHS5mjw4sihNPhOpDjYqwb7E30Io5awbvAt4A
+  - name: cache-control
+    value: no-cache
+  - name: Cookie
+    value: _cfuvid=s_saRa3hVn_nsKsZ2IWz8v3vF6wEJ1peLQOgPPKLGGA-1771922001730-0.0.1.1-604800000; _ga=GA1.2.318958323.1737016726; _hjSessionUser_2594103=eyJpZCI6ImQ5NzQwMTFlLTI2ZjUtNTY5MS05YTJhLTRkNDNlZWY5ZDlmYyIsImNyZWF0ZWQiOjE3NzE5MjYyOTY2NzksImV4aXN0aW5nIjp0cnVlfQ==; _ga_LSV9NWWG90=GS2.1.s1771978824$o2$g0$t1771978824$j60$l0$h0; utag_main=v_id:019c31fc2a2a0000423defb609d305075001b06d00942$_sn:5$_se:2%3Bexp-session$_ss:0%3Bexp-session$_st:1772091275403%3Bexp-session$ses_id:1772089474928%3Bexp-session$_pn:1%3Bexp-session; _legacy_auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; cf_clearance=Y3YT4mHbcwKIgq0j0L5UjVu6Iloq1F3CRWAQEoanDrc-1772171813-1.2.1.1-jirZFRJpj2WQTPVi1i07lLKvw83xE0dOBGLlZHhiluEw7G.nHHS_bFHRVpSgOPIK2tx9oHQIt6eFRD8j.pwpq_mRY.w_yypybIwh5_eCybEFCTh3fkynDM_96wDb2bbfIsCdgsJtXi_H1_.TfYJZp08HFGn3DaoQH.D0Dj_vouwsypocLtEEyqOV7qJ1Pi4vDXdkMsQjbQxJDuYWlLBtWqPZReUWJUD6jB9q.JxsgyQ; __cf_bm=frlv1ajhHj5lG5XfZJT30hqcw4u3yk2hoR8Unsl4h74-1772182773-1.0.1.1-K9_E1NRkwo7ZTtJ4lLqEaRBnRA31LJrKRyZerQmT2cBq4uvxZTpPe9s.KG6jTNNUne6epnBXK.8mGsygsBbJlC7vssniSBv0eTodzGMf27k; __cf_bm=agOH3Yx_X6oCzz0JLjHvOlTZVWJ09m7xRlW3xQlLKyw-1772184196-1.0.1.1-fS4Nhy47NZGWw5f0ahDLcS4RqW9HMVjAIRr6BcEpfq97m7zjcRtQxao2fy5J0u5lxZpO50PpjRQUHcNPgIUfsJTlbA1oTPwE3Kv0yteTux8; _cfuvid=Nl_DjON4l6L8IoYCV0BlC0rqqR_ejgsiTL0iFPTR7BY-1772184196236-0.0.1.1-604800000
+  - name: dnt
+    value: '1'
+  - name: expires
+    value: '-1'
+  - name: group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - name: newrelic
+    value: eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjYyMjAyNDMiLCJhcCI6IjU5NDU3Mzg2OCIsImlkIjoiYTIyZDcyMDYyMmUzMjJmNiIsInRyIjoiZTEwMTg0Y2YyMDg5ZWU3M2UwMWY1NTY1Y2RmZDFmNzMiLCJ0aSI6MTc3MjE4NDE5NjI2NSwidGsiOiIzMDQ1NTcwIn19
+  - name: pragma
+    value: no-cache
+  - name: priority
+    value: u=1, i
+  - name: referer
+    value: https://int.network-eng.sage.com/app/home
+  - name: sec-ch-ua
+    value: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+  - name: sec-ch-ua-mobile
+    value: ?0
+  - name: sec-ch-ua-platform
+    value: '"macOS"'
+  - name: sec-fetch-dest
+    value: empty
+  - name: sec-fetch-mode
+    value: cors
+  - name: sec-fetch-site
+    value: same-origin
+  - name: traceparent
+    value: 00-e10184cf2089ee73e01f5565cdfd1f73-a22d720622e322f6-01
+  - name: tracestate
+    value: 3045570@nr=0-1-6220243-594573868-a22d720622e322f6----1772184196265
+  - name: user-agent
+    value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+  - name: x-group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - name: x-requested-with
+    value: XMLHttpRequest

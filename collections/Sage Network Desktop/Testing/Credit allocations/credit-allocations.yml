@@ -1,0 +1,8 @@
+uid: d8e540c9-0948-42fb-8822-dea4a5ed3ce4
+info:
+  name: credit-allocations
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credit-allocations'

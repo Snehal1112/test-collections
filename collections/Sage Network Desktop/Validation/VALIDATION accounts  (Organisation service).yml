@@ -1,0 +1,18 @@
+uid: be977edd-c290-4e9c-927a-57474e6b33d6
+info:
+  name: VALIDATION accounts  (Organisation service)
+  type: http
+  seq: 2
+http:
+  method: GET
+  url: '{{organisationServiceURL}}/accounts/{{provisionAccountResponseAccountId}}'
+  headers:
+  - name: Authorization
+    value: Bearer {{Jwt}}
+runtime:
+  scripts:
+  - type: after-response
+    code: |-
+      test("OK", function () {
+          expect(res.getStatus()).to.equal(200);
+      });

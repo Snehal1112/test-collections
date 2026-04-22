@@ -1,0 +1,8 @@
+uid: 7222d670-f6f1-4901-87be-fb3e7bb33f3d
+info:
+  name: credits
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/credits'

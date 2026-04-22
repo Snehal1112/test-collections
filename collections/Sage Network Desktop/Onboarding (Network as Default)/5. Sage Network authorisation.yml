@@ -1,0 +1,15 @@
+uid: 6333a9fe-504d-466e-8045-c37320141ee0
+info:
+  name: 5. Sage Network authorisation
+  type: http
+  seq: 4
+http:
+  method: GET
+  url: http://
+  headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+  - name: Cookie
+    value: __cf_bm=8ILp6kipxhJx.bzhfft_TMU2wyXIHoe09FoAvgqCDHA-1705576945-1-AWMIFutymdC6ovzhSjcXyor7eqjmkyhJCesGrgiLEGFGwnYukkgg+2Tp2VWGwVj5QsIvS4swHGQD2u1OLUjUoCU=; did=s%3Av0%3Adb4d2310-b5f3-11ee-bfcc-918c56ccee10.1RBFJ%2FWRt28GBLTmi0jgDWJCvh69MZ6sx549sQzFHns; did_compat=s%3Av0%3Adb4d2310-b5f3-11ee-bfcc-918c56ccee10.1RBFJ%2FWRt28GBLTmi0jgDWJCvh69MZ6sx549sQzFHns
+  - name: Accept
+    value: application/json

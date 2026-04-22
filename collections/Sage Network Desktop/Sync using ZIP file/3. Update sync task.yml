@@ -1,0 +1,43 @@
+uid: 8e0b7e6b-8a4b-47f1-837c-0803c558d1dd
+info:
+  name: 3. Update sync task
+  type: http
+  seq: 3
+http:
+  method: PATCH
+  url: '{{connectorBaseUrl}}/connectors/erp/datasets/{{networkProductInstancesTenantId}}/sync-tasks'
+  headers:
+  - name: Content-Type
+    value: application/vnd.api+json
+  - name: Accept
+    value: application/vnd.api+json
+  - name: Idempotency-Key
+    value: '{{$guid}}'
+  body:
+    type: json
+    data: |-
+      {
+          "data": {
+              "type": "synctask",
+              "id": "{{connectorSyncTaskId}}",
+              "attributes": {
+                  "summary": {
+                      "totalInvoices": 0,
+                      "totalPayments": 0,
+                      "totalCompanies": 0,
+                      "totalContacts": 0,
+                      "totalGlAccounts": 0,
+                      "totalGlAccountEntries": 0,
+                      "totalCustomFields": 0
+                  }
+              },
+              "relationships": {
+                  "attachment": {
+                      "data": {
+                          "id": "{{connectorAttachmentId}}",
+                          "type": "attachment"
+                      }
+                  }
+              }
+          }
+      }

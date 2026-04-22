@@ -1,0 +1,8 @@
+uid: be9a8cef-357a-4753-bbdd-e278b572eced
+info:
+  name: invoices/:id/lines
+  type: http
+  seq: 1
+http:
+  method: GET
+  url: '{{NetworkUrl}}/datasets/{{networkProductInstancesTenantId}}/invoices/:id/lines'

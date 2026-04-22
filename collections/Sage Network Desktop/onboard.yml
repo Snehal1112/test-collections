@@ -1,0 +1,66 @@
+uid: 2fe88ace-ae1b-4bf0-aac4-091e1d6f4416
+info:
+  name: onboard
+  type: http
+  seq: 9
+http:
+  method: POST
+  url: https://int.network-eng.sage.com/inbox/api/v3/onboard
+  headers:
+  - name: accept
+    value: text/plain
+  - name: accept-language
+    value: en-US,en;q=0.9
+  - name: app-code
+    value: sage_network
+  - name: applicationname
+    value: Sage Connect UI
+  - name: authorization
+    value: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InpRTEFFQjdGRkFIcmlRNFFoMTJRSyJ9.eyJodHRwczovL3NhZ2UuY29tL3NjaS9pZHAiOiJDbG91ZElEIiwiaXNzIjoiaHR0cHM6Ly9pZC1zaGFkb3cuc2FnZS5jb20vIiwic3ViIjoiYXV0aDB8MjMxNGUxNDE4NTQ3NTE5OGI2OWMxYzJjMjdmOGRmNGY3MTk0YzMwYjZkODE2MWNkIiwiYXVkIjpbInNuZXQtZGV2L25ldHdvcmsvYXBpIiwiaHR0cHM6Ly9zYWdlLWNpZC1zaGFkb3cuc2FnZWlkbm9ucHJvZC5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNzcyMTg0MDQ3LCJleHAiOjE3NzIyMTI4NDcsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJhenAiOiJTUUR5aWlDSXJPemQyZ2c2SkRueXVVN2FrSjhBU002TCJ9.Nm45Zxrd6qqB2jDkruGuPtksOLsm-Vr1-wJC19KyT6hgP2hoXiYVKtPQT5-wBfolWcYI6QK3x6g6kCBIw3s3qDxiXcTO-GR75ChYpsaURzBm-o7cVrnjbIHySXliIym8GQ0KxGmr1srbSG4T4xeeLVtyut2YyanRqAU2qHhIPXjirz7-x_-U3CNTd10BgFCI-NjOLYJh1_G5ok7lsumVO7rDNHkvaD8hZ7wbHIZahH1qgIXPWbWuRIk4KP_awMnYXJi00Yz93DFkVNEzcjTCpT3OOsuxxQq_rDzbUtb355C7ziBhE9LEtS81NNHR5Ga8fCaAJiV0bWGeuzRrG0TDbQ
+  - name: cache-control
+    value: no-cache
+  - name: content-type
+    value: application/json
+  - name: Cookie
+    value: _cfuvid=s_saRa3hVn_nsKsZ2IWz8v3vF6wEJ1peLQOgPPKLGGA-1771922001730-0.0.1.1-604800000; _ga=GA1.2.318958323.1737016726; _hjSessionUser_2594103=eyJpZCI6ImQ5NzQwMTFlLTI2ZjUtNTY5MS05YTJhLTRkNDNlZWY5ZDlmYyIsImNyZWF0ZWQiOjE3NzE5MjYyOTY2NzksImV4aXN0aW5nIjp0cnVlfQ==; _ga_LSV9NWWG90=GS2.1.s1771978824$o2$g0$t1771978824$j60$l0$h0; utag_main=v_id:019c31fc2a2a0000423defb609d305075001b06d00942$_sn:5$_se:2%3Bexp-session$_ss:0%3Bexp-session$_st:1772091275403%3Bexp-session$ses_id:1772089474928%3Bexp-session$_pn:1%3Bexp-session; _legacy_auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; auth0.SQDyiiCIrOzd2gg6JDnyuU7akJ8ASM6L.is.authenticated=true; cf_clearance=Y3YT4mHbcwKIgq0j0L5UjVu6Iloq1F3CRWAQEoanDrc-1772171813-1.2.1.1-jirZFRJpj2WQTPVi1i07lLKvw83xE0dOBGLlZHhiluEw7G.nHHS_bFHRVpSgOPIK2tx9oHQIt6eFRD8j.pwpq_mRY.w_yypybIwh5_eCybEFCTh3fkynDM_96wDb2bbfIsCdgsJtXi_H1_.TfYJZp08HFGn3DaoQH.D0Dj_vouwsypocLtEEyqOV7qJ1Pi4vDXdkMsQjbQxJDuYWlLBtWqPZReUWJUD6jB9q.JxsgyQ; __cf_bm=frlv1ajhHj5lG5XfZJT30hqcw4u3yk2hoR8Unsl4h74-1772182773-1.0.1.1-K9_E1NRkwo7ZTtJ4lLqEaRBnRA31LJrKRyZerQmT2cBq4uvxZTpPe9s.KG6jTNNUne6epnBXK.8mGsygsBbJlC7vssniSBv0eTodzGMf27k; __cf_bm=5MPwS8hZROIWcKxSzVk102Kvv7.pJ5srekaqEoeD2hU-1772184090-1.0.1.1-7Ydtnwe8391bpmgE.4QvX2dHyWPs7lSI4hCg8GSyarDlTnXOTRi9kgV2Gf2DKOuTC1wL_MsF5Iv7Uj4T.hsj4kqkqoU9a0.lEhgrerVZMfk; _cfuvid=DWFPAP6CDXmNJbCGH5DiHCUlZDwI2WWfXHTa4N9McaM-1772184090806-0.0.1.1-604800000
+  - name: dnt
+    value: '1'
+  - name: expires
+    value: '-1'
+  - name: group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - name: newrelic
+    value: eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjYyMjAyNDMiLCJhcCI6IjU5NDU3Mzg2OCIsImlkIjoiZGE3NGU0ZGY5MDQwYjNhMSIsInRyIjoiNmE2MjdiYjQyYjBiY2I3OWRjODMxZWVjNDdiYjI5NTgiLCJ0aSI6MTc3MjE4NDA5MDgzNSwidGsiOiIzMDQ1NTcwIn19
+  - name: origin
+    value: https://int.network-eng.sage.com
+  - name: pragma
+    value: no-cache
+  - name: priority
+    value: u=1, i
+  - name: referer
+    value: https://int.network-eng.sage.com/app/home
+  - name: sec-ch-ua
+    value: '"Not:A-Brand";v="99", "Google Chrome";v="145", "Chromium";v="145"'
+  - name: sec-ch-ua-mobile
+    value: ?0
+  - name: sec-ch-ua-platform
+    value: '"macOS"'
+  - name: sec-fetch-dest
+    value: empty
+  - name: sec-fetch-mode
+    value: cors
+  - name: sec-fetch-site
+    value: same-origin
+  - name: traceparent
+    value: 00-6a627bb42b0bcb79dc831eec47bb2958-da74e4df9040b3a1-01
+  - name: tracestate
+    value: 3045570@nr=0-1-6220243-594573868-da74e4df9040b3a1----1772184090835
+  - name: user-agent
+    value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+  - name: x-group-key
+    value: 25a77b24-0092-6be0-92e6-34d0aae4e471
+  - name: x-requested-with
+    value: XMLHttpRequest
+  body:
+    type: json
+    data: '{}'

@@ -1,0 +1,9 @@
+id: 1ff13b50-be56-4bf2-bd04-f9900b546245
+method: GET
+url: https://google.com
+status: 200
+durationMs: 970
+responseSize: 83604
+timestamp: 2026-04-17T11:17:33.639994125Z
+collection: null
+requestName: null

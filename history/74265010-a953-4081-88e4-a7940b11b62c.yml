@@ -1,0 +1,9 @@
+id: 74265010-a953-4081-88e4-a7940b11b62c
+method: GET
+url: https://dev.network-eng.sage.com//inbox/api/v2/attachments?filter_by=connection&connection_id=85c23596-6008-43f7-9fb1-15a011cc4bcc
+status: 403
+durationMs: 71
+responseSize: 4555
+timestamp: 2026-04-08T14:07:21.004444769Z
+collection: null
+requestName: null

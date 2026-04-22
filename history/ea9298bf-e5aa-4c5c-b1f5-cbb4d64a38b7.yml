@@ -1,0 +1,9 @@
+id: ea9298bf-e5aa-4c5c-b1f5-cbb4d64a38b7
+method: GET
+url: https://google.com//api/v1/webapp/:id=12//{{$foo}}
+status: 400
+durationMs: 528
+responseSize: 1555
+timestamp: 2026-04-21T08:52:33.446904585Z
+collection: null
+requestName: null
